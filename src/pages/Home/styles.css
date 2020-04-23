@@ -1,0 +1,31 @@
+.home-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.home-container .bannerImage{
+    position: absolute;
+    width: 43%;
+    margin-left: 32%;
+}
+
+.home-container .header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.home-container .header .logo{
+    margin-left: -10%;
+}
+
+.home-container .header .nav {
+    margin-left: 10%;
+}
+
+.home-container .header .nav,
+.home-container .header .logo {
+    margin-top: 32px;
+}
