@@ -6,6 +6,9 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family:  Helvetica, sans-serif;
+    color: #888;
 }
 
 body {
@@ -85,4 +88,17 @@ form textarea {
 
 .back-link:hover {
     opacity: 0.8;
+}
+
+.btn {
+    background-color: #ff817e;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: .8;
+    text-transform: uppercase;
+    min-width: 170px;
+    padding: 20px 15px;
 }
