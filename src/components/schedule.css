@@ -1,0 +1,30 @@
+.schedule {
+    text-align: center;
+}
+
+.titleSchedule {
+    margin: 10px 0 20px 0;
+    color: #1e2528;
+    font-size: 50px;
+    font-family: Rufina,serif;
+}
+
+.cont-form {
+    margin-bottom: 10px;
+}
+
+.contatoWhats {
+    margin: 20px 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 665px) {
+    h3 {
+        margin: 10px;
+        width: 100%;
+        font-size: 35px !important;
+    }
+}

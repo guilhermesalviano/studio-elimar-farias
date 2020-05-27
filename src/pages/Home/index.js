@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Footer } from '../../components/footer';
 import { TextAnimated } from '../../components/text-animated';
+import { Schedule } from '../../components/schedule';
 
 
 import './styles.css';
@@ -49,9 +50,9 @@ export default function Home() {
                                 <TextAnimated />
                                 <Link className="btn" to="https://leospa-react.themeies.com/">Ver serviços</Link>
                                 <div className="banner-icons">
-                                    <FaFacebook size={30} value="#E5665A" />
+                                    <a target="_blank" href="https://www.facebook.com/SalaodeBelezaElimar"><FaFacebook size={30} value="#E5665A" /></a>
                                     <span></span>
-                                    <FaInstagram size={30} color="#E5665A" />
+                                    <a target="_blank" href="https://www.instagram.com/studioelimarfarias"><FaInstagram size={30} color="#E5665A" /></a>
                                 </div>
                                 
                             </div>
@@ -72,6 +73,7 @@ export default function Home() {
                 <section className="feedback">
 
                 </section>
+                <Schedule />
             </div>
             <Footer />
         </div>

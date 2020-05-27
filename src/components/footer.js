@@ -14,7 +14,7 @@ export function Footer() {
                 { /*<div className="col-md-8 imagem-rodape">
                     <img src={bannerImg} width="142" />
                 </div>*/ }
-                <div className="col-md-12 about-me">
+                <div className="col-md-12 about-me colunm">
                     <div className="contacts">
                     © Studio Elimar Farias, 2020. Todos os direitos reservados.
                     </div>
@@ -42,8 +42,9 @@ export function Footer() {
                 </div>*/ }
             </div>
             <div className="row">
-                <div className="col-md-12">
-                    Desenvolvido por <span className="signature">Guilherme F Salviano</span><br />
+                <div className="col-md-12 colunm">
+                    Desenvolvido por <br />
+                    <span className="signature">Guilherme F Salviano</span><br />
                 </div>
             </div>
         </div>
