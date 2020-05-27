@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaWhatsapp, FaInbox } from 'react-icons/fa';
 
 import './footer.css';
 
@@ -10,34 +11,17 @@ export function Footer() {
     <section className="footer">
         <div className="container">
             <div className="row">
-                <div className="col-md-2">
+                { /*<div className="col-md-8 imagem-rodape">
                     <img src={bannerImg} width="142" />
+                </div>*/ }
+                <div className="col-md-12 about-me">
+                    <div className="contacts">
+                    © Studio Elimar Farias, 2020. Todos os direitos reservados.
+                    </div>
                 </div>
-                <div className="col-md-2">
-                    <h4>company</h4>
-                    <ul className="navbar-nav">
-                    <li><Link href="">Sobre</Link></li>
-                    <li><Link href="">trabalhe Conosco</Link></li>
-                    <li><Link href="">Imprensa</Link></li>
-                    <li><Link href="">Novidades</Link></li>
-                    </ul>
-                </div>
-                <div className="col-md-2">
-                    <h4>comunidades</h4>
-                    <ul className="navbar-nav">
-                    <li><Link href="">Profissionais</Link></li>
-                    <li><Link href="">Professores</Link></li>
-                    <li><Link href="">Marcas</Link></li>
-                    </ul>
-                </div>
-                <div className="col-md-2">
-                    <h4>links uteis</h4>
-                    <ul className="navbar-nav">
-                    <li><Link href="">Ajuda</Link></li>
-                    <li><Link href="">Presentes</Link></li>
-                    </ul>
-                </div>
-                <div className="col-md-4">
+
+
+                { /*<div className="col-md-4 about-me">
                     <ul>
                         <li>
                             <Link href=""><img src="imagens/facebook.png" /></Link>
@@ -48,18 +32,18 @@ export function Footer() {
                         <li>
                             <Link href=""><img src="imagens/instagram.png" /></Link>
                         </li>
-                        <br />
-                        <li>
-                            <span className="copyright"><i className="far fa-envelope mr-1"></i>suporte@puzzlels.com</span>
-                        </li>
-                        </ul>
-                        <br />
-                        <ul className="list-inline quicklinks">
-                    
-                        <li className="list-inline-item">
-                        Puzzle - <Link className="text-muted" href="http://api.whatsapp.com/send?1=pt_BR&phone=551195803-0103" alt="11 95803-0103" target="_blank"><i className="fab fa-whatsapp mr-3"></i>11 95803-0103</Link>
-                        </li>
                     </ul>
+                    <div className="contacts">
+                        Contatos: <br />
+                        <FaInbox size={20} /><a href="mailto:guilherme.salviano12@outlook.com" target="_blank"> guilherme.salviano12@outlook.com</a>
+                        <br />
+                        <FaWhatsapp size={20} /><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511948449969&text=Olá+Guilherme,+consegui+seu+contato+através+da+pagina+'Studio+Elimar+Farias'..." alt="" target="_blank"> (11) 94844-9969</a>
+                    </div>
+                </div>*/ }
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    Desenvolvido por <span className="signature">Guilherme F Salviano</span><br />
                 </div>
             </div>
         </div>

@@ -15,8 +15,9 @@
 
 .home-container .banner-image{
     position: absolute;
-    width: 700px;
-    margin-left: 40%;
+    width: 40%;/*700px*/
+    right: 0;
+    margin-right: 5px;
     margin-top: 100px;
 }
 
@@ -57,7 +58,7 @@
 .texts-container {
     width: 100%;
     padding: 0 30px;
-    margin-top: 12%;
+    margin-top: 8%;
 }
 
 .banner-texts-content  span {
@@ -78,7 +79,7 @@
 }
 
 .banner-texts-content .banner-icons  {
-    margin-top: 15px;
+    margin-top: 10px;
     width: 170px;
     display: flex;
     justify-content: center;
@@ -117,7 +118,7 @@
 @media only screen and (max-width: 1180px) {
     .home-container .banner-content {
         height: 100%;
-        margin-bottom: 95px;
+        margin-bottom: 35px;
     }
 
     .banner-image {
@@ -173,11 +174,65 @@
         margin-top: -5px;
         padding-top: 0px;
     }
+
+    .btn, .sec-heading, .about {
+        width: 100%;
+    }
+
+    .home-container .about h3 {
+        padding: 10px !important;
+    }
+
+    .sec-heading h3 {
+        margin: 0;
+        width: 100%;
+        font-size: 35px !important;
+    }
 }
 
 @media only screen and (max-width: 375px) {
+    .home-container .about h3 {
+        padding: 10px 0 10px 0 !important;
+    }
 
-    .banner-content {
-        height: 100vh !important;
+    .banner-texts-content h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+
+    .sec-heading {
+        margin: 20px 0 20px 0;
+    }
+
+    .sec-heading h3 {
+        margin: 10px 0 20px 0;
+    }
+
+    .about {
+        margin: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .logo {
+        margin-top: 23px !important;
+        margin-left: -15px !important;
+    }
+
+    .nav {
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+
+    .banner-texts-content h2 {
+        font-size: 36px !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
