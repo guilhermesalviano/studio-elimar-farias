@@ -6,7 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["salon", "api", "schedule"],
+  "keywords": [
+    "salon",
+    "api",
+    "schedule"
+  ],
   "author": "elguibs",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^12.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
