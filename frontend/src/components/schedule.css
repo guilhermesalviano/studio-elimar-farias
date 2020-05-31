@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+.btn-schedule {
+    margin: 5% 0 5% 0;
+}
+
 @media only screen and (max-width: 665px) {
     h3 {
         margin: 10px;

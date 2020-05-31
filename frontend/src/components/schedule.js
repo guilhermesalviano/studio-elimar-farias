@@ -24,31 +24,30 @@ export function Schedule() {
             </div>
             <div className="container cont-form">
                 <div className="row">
-                    <div className="col-md-6 cont-form">
+                    {/*<div className="col-md-6 cont-form">
                         <input type="phone" placeholder="Seu Whatsapp" />
-                    </div>
-                    <div className="col-md-3 cont-form">
+                    </div>*/}
+                    <div className="col-md-6 cont-form">
                         <select name="day" placeholder="Horário pretêndido" >
                             <option value="data">Data</option>
                             <option value="27/05/2020">27/05/2020</option>
                         </select>
                     </div>
-                    <div className="col-md-3 cont-form">
+                    <div className="col-md-6 cont-form">
                         <select name="hour" placeholder="Horário pretêndido" >
                             <option value="Hora">Hora</option>
                             <option value="13:00">13:00</option>
                         </select>
                     </div>
                 </div>
-                <h5 className="contatoWhats">Fique atento na confirmação de agendamento que você receberá via Whatsapp.</h5>
-                <button className="btn" type="submit">Solicitar</button>
-                <h5 className="contatoWhats">Ou se preferir, entre em contato direto pelo Whatsapp.</h5>
+                {/*<h5 className="contatoWhats">Fique atento na confirmação de agendamento que você receberá via Whatsapp.</h5>*/}
+                <button className="btn btn-schedule" type="submit"><FaWhatsapp size={30} /> Solicitar agendamento</button>
+                {/*<h5 className="contatoWhats">Ou se preferir, entre em contato direto pelo Whatsapp.</h5>*/}
             </div>
-            
         </form>
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511973169581&text=Ol%C3%A1,+gostria+de+solicitar+um+agendamento+de+">
-            <h5 className="contatoWhats"><FaWhatsapp size={30} /> Enviar Mensagem</h5>
-        </a>
+        {/*<a target="_blank" href="https://api.whatsapp.com/send?phone=5511973169581&text=Ol%C3%A1,+gostria+de+solicitar+um+agendamento+de+">
+            <h5 className="contatoWhats"> Enviar Mensagem</h5>
+        </a>*/}
     </section>
     );
 }

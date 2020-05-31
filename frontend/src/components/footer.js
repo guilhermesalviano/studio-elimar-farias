@@ -42,8 +42,14 @@ export function Footer() {
                 </div>*/ }
             </div>
             <div className="row">
+                <div className="col-md-12 colunm credits-icon">
+                    Icone e imagem da borboleta por: <a target="_blank" href="#">Issac</a>
+                </div>
+            </div>
+
+            <div className="row">
                 <div className="col-md-12 colunm">
-                    Desenvolvido por <br />
+                    Site desenvolvido por <br />
                     <span className="signature">Guilherme F Salviano</span><br />
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+Gostaria+de+solicitar+um+servi%C3%A7o+de+">
                         <FaWhatsapp size={30} />

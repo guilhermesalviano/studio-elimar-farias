@@ -9,10 +9,6 @@ h4, .about-me, .about-me span, .contacts {
     color: #DFDFDF !important;
 }
 
-.about-me {
-    padding: 30px 0;
-}
-
 .signature {
     font-family: 'Snell Roundhand', Roboto;
     font-weight: 700;
@@ -33,4 +29,8 @@ h4, .about-me, .about-me span, .contacts {
 .colunm {
     margin: 10px;
     color: #DFDFDF !important;
+}
+
+.credits-icon {
+    margin: 5% 0 5% 0;
 }
