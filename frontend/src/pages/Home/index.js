@@ -46,9 +46,9 @@ export default function Home() {
                         <div className="row">
                             <div className="banner-texts-content">
                                 <span>Seja bem-vinda!</span>
-                                <h2>À página ofical do Studio Elimar Farias</h2>
+                                <h2>Ao site do Studio Elimar Farias</h2>
                                 <TextAnimated />
-                                <Link className="btn" to="https://leospa-react.themeies.com/">Ver serviços</Link>
+                                <Link className="btn" to="https://leospa-react.themeies.com/">Agendar um horário</Link>
                                 <div className="banner-icons">
                                     <a target="_blank" href="https://www.facebook.com/SalaodeBelezaElimar"><FaFacebook size={30} value="#E5665A" /></a>
                                     <span></span>

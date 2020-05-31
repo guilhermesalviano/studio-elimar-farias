@@ -45,6 +45,9 @@ export function Footer() {
                 <div className="col-md-12 colunm">
                     Desenvolvido por <br />
                     <span className="signature">Guilherme F Salviano</span><br />
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+Gostaria+de+solicitar+um+servi%C3%A7o+de+">
+                        <FaWhatsapp size={30} />
+                    </a>
                 </div>
             </div>
         </div>
