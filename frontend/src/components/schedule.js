@@ -4,7 +4,38 @@ import { FaWhatsapp} from 'react-icons/fa';
 import './schedule.css';
 
 export function Schedule() {
-    const [dates, setDates] = useState('');
+
+    function generateDatesMonthsAfter() {
+        const date = new Date();
+
+        const today = date.toLocaleDateString().split('/');
+
+        const daysPerMonth = {
+            1 : 31,
+            2 : (((date.getFullYear() % 4) == 0) ? '29' : '28'),
+            3 : 31,
+            4 : 30,
+            5 : 31,
+            6 : 30,
+            7 : 31,
+            8 : 31,
+            9 : 30,
+            10: 31,
+            11: 30,
+            12: 31
+        }
+
+        let months = parseInt(today[1]);
+        let arrayDates = [];
+        while (months < (parseInt(today[1])+2)){
+            for(let day = today[0]; day <= daysPerMonth[months]; day++) {
+                arrayDates.push(day + '/'+ months +'/' + today[2]);
+            }
+            months++;
+        }
+
+        return arrayDates;
+    };
 
     const [name, setName] = useState('');
     const [service, setService] = useState('');
@@ -17,7 +48,7 @@ export function Schedule() {
         if (!service) { alert('Selecione um serviço.'); return; }
         if (!date) { alert('Selecione uma data.'); return; }
         if (!hour) { alert('Selecione uma hora.'); return; }
-        const message = 'Olá, sou '+name+'.\nTeria como agendar um(a) '+service+' no dia '+date+' às '+hour+'?';
+        const message = 'Olá, sou '+name+'. Gostaria de agendar um(a) '+service+' no dia '+date+' às '+hour+'?';
         window.open('http://api.whatsapp.com/send?1=pt_BR&phone=5511973169581&text='+encodeURI(message));
     }
 
@@ -40,6 +71,7 @@ export function Schedule() {
                             <option value="Botox Capilar">Botox Capilar</option>
                             <option value="Plástica de fios">Plástica de fios</option>
                             <option value="Reconstrução Térmica">Reconstrução Térmica</option>
+                            <option value="Outro Serviço">Outro</option>
                         </select>
                     </div>
                 </div>
@@ -52,7 +84,10 @@ export function Schedule() {
                     <div className="col-md-6 cont-form">
                         <select value={date} onChange={e => setDate(e.target.value)} placeholder="data pretêndida" >
                             <option value="">Data</option>
-                            <option value="27/05/2020">27/05/2020</option>
+                            {generateDatesMonthsAfter().map((date) =>
+                                <option key={date} value={date}>{date}</option>
+                            )}
+                            
                         </select>
                     </div>
                     <div className="col-md-6 cont-form">
