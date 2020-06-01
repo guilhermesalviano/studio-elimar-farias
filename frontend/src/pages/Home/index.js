@@ -72,7 +72,7 @@ export default function Home() {
                         Lorem ipsum mi torquent mi risus porta varius egestas varius, imperdiet adipiscing lorem at ipsum quam ante ipsum, nibh curabitur scelerisque elementum class cubilia luctus gravida.
                         </p>
                     </div>
-                    <Link className="btn btn-round" to="/about">Ler mais</Link>
+                    <Link className="btn btn-round" to="/"  onClick={() => {alert('Desculpe. Página com mais informações em desenvolvimento.')}}>Ler mais</Link>
                 </section>
                 <section className="feedback">
 
