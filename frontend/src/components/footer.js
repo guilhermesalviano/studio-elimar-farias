@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaInbox } from 'react-icons/fa';
+import { FaWhatsapp} from 'react-icons/fa';
 
 import './footer.css';
-
-import bannerImg from '../assets/banner.png';
 
 export function Footer() {
     return (
@@ -43,7 +40,7 @@ export function Footer() {
             </div>
             <div className="row">
                 <div className="col-md-12 colunm credits-icon">
-                    Logo e icone do sobre por <a target="_blank" href="https://stock.adobe.com/br/contributor/208423244/new-tropical?asset_id=278113932">New tropical</a>.
+                    Logo e icone do sobre por <a target="_blank" rel="noopener noreferrer"  href="https://stock.adobe.com/br/contributor/208423244/new-tropical?asset_id=278113932">New tropical</a>.
                 </div>
             </div>
 
@@ -51,7 +48,7 @@ export function Footer() {
                 <div className="col-md-12 colunm">
                     Site desenvolvido por <br />
                     <span className="signature">Guilherme F Salviano</span><br />
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+">
+                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+">
                         <FaWhatsapp size={30} />
                     </a>
                 </div>
