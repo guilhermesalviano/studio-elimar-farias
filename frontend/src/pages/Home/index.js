@@ -52,7 +52,7 @@ export default function Home() {
                                 <span>Seja bem-vinda(o)!</span>
                                 <h2>Ao site do Studio Elimar Farias</h2>
                                 <TextAnimated />
-                                <Link className="btn" onclick={componentDidMount()}>Agendar um horário</Link>
+                                <Link className="btn" to="/" onClick={componentDidMount()}>Agendar um horário</Link>
                                 <div className="banner-icons">
                                     <a target="_blank" href="https://www.facebook.com/SalaodeBelezaElimar"><FaFacebook size={30} value="#E5665A" /></a>
                                     <span></span>
@@ -72,7 +72,7 @@ export default function Home() {
                         Lorem ipsum mi torquent mi risus porta varius egestas varius, imperdiet adipiscing lorem at ipsum quam ante ipsum, nibh curabitur scelerisque elementum class cubilia luctus gravida.
                         </p>
                     </div>
-                    <Link className="btn btn-round" to="https://leospa-react.themeies.com/about">Ler mais</Link>
+                    <Link className="btn btn-round" to="/about">Ler mais</Link>
                 </section>
                 <section className="feedback">
 
