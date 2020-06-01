@@ -29,7 +29,10 @@ export function Schedule() {
         let arrayDates = [];
         while (months < (parseInt(today[1])+2)){
             for(let day = today[0]; day <= daysPerMonth[months]; day++) {
-                arrayDates.push(day + '/'+ months +'/' + today[2]);
+                const newDay = new Date(today[2], months, day, '00', '00', '00');
+                if(newDay.getDay() !== 2 && newDay.getDay() !== 3){
+                    arrayDates.push(day + '/'+ months +'/' + today[2]);
+                }
             }
             months++;
         }
