@@ -1,23 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaInbox } from 'react-icons/fa';
+import React, { useState }  from 'react';
+import { FaWhatsapp} from 'react-icons/fa';
 
 import './schedule.css';
 
 export function Schedule() {
+    const [dates, setDates] = useState('');
+
+    const [name, setName] = useState('');
+    const [service, setService] = useState('');
+    const [date, setDate] = useState('');
+    const [hour, setHour] = useState('');
+
+    function handleSchedule(e){
+        e.preventDefault();
+        if (!name) { alert('Adicione seu nome.'); return; }
+        if (!service) { alert('Selecione um serviço.'); return; }
+        if (!date) { alert('Selecione uma data.'); return; }
+        if (!hour) { alert('Selecione uma hora.'); return; }
+        const message = 'Olá, sou '+name+'.\nTeria como agendar um(a) '+service+' no dia '+date+' às '+hour+'?';
+        window.open('http://api.whatsapp.com/send?1=pt_BR&phone=5511973169581&text='+encodeURI(message));
+    }
+
     return (
     <section className="schedule">
         <h3 className="titleSchedule">Agende um horário</h3>
-        <form>
+        <form onSubmit={handleSchedule}>
             <div className="container cont-form">
                 <div className="row">
                     <div className="col-md-6  cont-form">
-                        <input placeholder="Seu Nome" />
+                        <input value={name} onChange={e => setName(e.target.value)} placeholder="Seu Nome" />
                     </div>
                     <div className="col-md-6">
-                        <select name="service" placeholder="Horário pretêndido" >
-                            <option value="serviço">Serviço</option>
+                        <select value={service} onChange={e => setService(e.target.value)} placeholder="Horário pretêndido" >
+                            <option value="">Serviço</option>
                             <option value="Corte Feminino">Corte Feminino</option>
+                            <option value="Corte Masculino">Corte Masculino</option>
+                            <option value="Coloração">Coloração</option>
+                            <option value="Cauterização">Cauterização</option>
+                            <option value="Botox Capilar">Botox Capilar</option>
+                            <option value="Plástica de fios">Plástica de fios</option>
+                            <option value="Reconstrução Térmica">Reconstrução Térmica</option>
                         </select>
                     </div>
                 </div>
@@ -28,15 +50,38 @@ export function Schedule() {
                         <input type="phone" placeholder="Seu Whatsapp" />
                     </div>*/}
                     <div className="col-md-6 cont-form">
-                        <select name="day" placeholder="Horário pretêndido" >
-                            <option value="data">Data</option>
+                        <select value={date} onChange={e => setDate(e.target.value)} placeholder="data pretêndida" >
+                            <option value="">Data</option>
                             <option value="27/05/2020">27/05/2020</option>
                         </select>
                     </div>
                     <div className="col-md-6 cont-form">
-                        <select name="hour" placeholder="Horário pretêndido" >
-                            <option value="Hora">Hora</option>
+                        <select value={hour} onChange={e => setHour(e.target.value)} placeholder="Horário pretêndido" >
+                            <option value="">Hora</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
                             <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
                         </select>
                     </div>
                 </div>
