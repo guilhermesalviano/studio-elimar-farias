@@ -43,7 +43,7 @@ export function Footer() {
             </div>
             <div className="row">
                 <div className="col-md-12 colunm credits-icon">
-                    Icone e imagem da borboleta por <a target="_blank" href="https://stock.adobe.com/br/contributor/208423244/new-tropical?asset_id=278113932">New tropical</a>
+                    Logo e icone do sobre por <a target="_blank" href="https://stock.adobe.com/br/contributor/208423244/new-tropical?asset_id=278113932">New tropical</a>.
                 </div>
             </div>
 
