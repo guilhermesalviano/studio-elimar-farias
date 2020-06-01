@@ -51,7 +51,7 @@ export function Schedule() {
         if (!service) { alert('Selecione um serviço.'); return; }
         if (!date) { alert('Selecione uma data.'); return; }
         if (!hour) { alert('Selecione uma hora.'); return; }
-        const message = 'Olá, sou '+name+'. Gostaria de agendar um(a) '+service+' no dia '+date+' às '+hour+'?';
+        const message = 'Olá, sou '+name+'. Desejo agendar um(a) '+service+' no dia '+date+' às '+hour+', é possível?';
         window.open('http://api.whatsapp.com/send?1=pt_BR&phone=5511973169581&text='+encodeURI(message));
     }
 
