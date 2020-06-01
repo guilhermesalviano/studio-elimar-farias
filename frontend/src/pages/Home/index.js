@@ -54,9 +54,9 @@ export default function Home() {
                                 <TextAnimated />
                                 <Link className="btn" to="/" onClick={componentDidMount()}>Agendar um horário</Link>
                                 <div className="banner-icons">
-                                    <a target="_blank" href="https://www.facebook.com/SalaodeBelezaElimar"><FaFacebook size={30} value="#E5665A" /></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/SalaodeBelezaElimar"><FaFacebook size={30} value="#E5665A" /></a>
                                     <span></span>
-                                    <a target="_blank" href="https://www.instagram.com/studioelimarfarias"><FaInstagram size={30} color="#E5665A" /></a>
+                                    <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/studioelimarfarias"><FaInstagram size={30} color="#E5665A" /></a>
                                 </div>
                                 
                             </div>
@@ -67,9 +67,10 @@ export default function Home() {
                     <div className="sec-heading">
                         <img className="logo-about" src={aboutImg} width="80px" alt="" />
                         <span className="preTitle">UM POUCO SOBRE NOSSA TRAJETÓRIA</span>
-                        <h3>Conheça nossa trajetória</h3>
+                        <h3>Conheça um pouco sobre a história de Elimar</h3>
                         <p>
-                        Lorem ipsum mi torquent mi risus porta varius egestas varius, imperdiet adipiscing lorem at ipsum quam ante ipsum, nibh curabitur scelerisque elementum class cubilia luctus gravida.
+                            Iniciei na área da beleza como Cabeleireira a 25 anos atrás e desde então venho me especializando. 
+                            Já pude realizar diversos cursos, dentre eles, gosto bastante de citar o que foi ministrado pelo <strong>Rodrigo Cintra</strong>, <strong>Rose Valverde</strong> e pela <strong>Karina França</strong>.
                         </p>
                     </div>
                     <Link className="btn btn-round" to="/"  onClick={() => {alert('Desculpe. Página com mais informações em desenvolvimento.')}}>Ler mais</Link>
