@@ -28,15 +28,17 @@ export function Schedule() {
         let months = parseInt(today[1]);
         let arrayDates = [];
         while (months < (parseInt(today[1])+2)){
-            for(let day = today[0]; day <= daysPerMonth[months]; day++) {
-                const newDay = new Date(today[2], months, day, '00', '00', '00');
-                if(newDay.getDay() !== 2 && newDay.getDay() !== 3){
-                    arrayDates.push(day + '/'+ months +'/' + today[2]);
+            let day = 1;
+            if (months === parseInt(today[1])){day = today[0]}
+            for(; day <= daysPerMonth[months]; day++) {
+                const newDay = new Date(today[2], (months-1), day);
+                const actualDay = newDay.getDay();
+                if(actualDay !== 0 && actualDay !== 1){
+                    arrayDates.push(newDay.toLocaleDateString());
                 }
             }
             months++;
         }
-
         return arrayDates;
     };
 
