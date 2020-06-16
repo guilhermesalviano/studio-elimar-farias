@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaWhatsapp} from 'react-icons/fa';
-
 import './footer.css';
 
 export function Footer() {
@@ -46,13 +44,13 @@ export function Footer() {
 
             <div className="row">
                 <div className="col-md-12 colunm">
-                    Site desenvolvido por <br />
+                    Desenvolvido com <span role="img" aria-label="heart">❤️</span> por <br />
                     <a target="_blank" rel="noopener noreferrer" href="https://guilhermesalviano.now.sh?utm_source=studioelimar&utm_medium=site&utm_campaign=signature">
                         <span className="signature">Guilherme F Salviano</span><br />
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+">
+                    {/* <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5511948449969&text=Ol%C3%A1,+Guilherme.+">
                         <FaWhatsapp size={30} />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>
