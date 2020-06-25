@@ -10,10 +10,11 @@ h4, .about-me, .about-me span, .contacts {
 }
 
 .signature {
-    font-family: 'Dancing Script', 'Snell Roundhand', cursive;
+    font-family:  'Great Vibes', 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 22px;
     color: #DFDFDF !important;
+    line-height: 60px;
 }
 
 .imagem-rodape{
