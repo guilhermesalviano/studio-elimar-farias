@@ -2,6 +2,9 @@
 
 Este projeto é uma landing page desenvolvida em React dedicada ao agendamento de serviços. Oferece uma interface amigável e intuitiva para os usuários agendarem compromissos, fornecendo uma experiência simples e eficiente.
 
+## Demo
+![Demo](./demo-studio-elimar-farias.gif)
+
 ## Funcionalidades
 
 - **Agendamento de Serviços:** Os usuários podem selecionar e agendar serviços disponíveis através da interface da landing page.
